@@ -5,6 +5,7 @@
 
 body {
     overflow: hidden;
+    background-color: #fcf9ea;
 }
 
 ul,
@@ -86,17 +87,29 @@ ol {
 }
 
 .sizes>li {
-    margin: 20px 0;
+    margin: 20px 0 0;
+    width: 30px;
+    height: 21px;
+    position: relative;
 }
 
-.sizes>.thin {
+.sizes .thin {
+    position: absolute;
     height: 0;
-    width: 20px;
+    width: 30px;
+    margin-top: 9px;
     border-top: 3px solid black;
 }
 
-.sizes>.thick {
+.sizes .thinActive,
+.sizes .thickActive {
+    background-color: #ddd;
+}
+
+.sizes .thick {
+    position: absolute;
     height: 0;
-    width: 20px;
+    width: 30px;
+    margin-top: 7px;
     border-top: 7px solid black;
 }

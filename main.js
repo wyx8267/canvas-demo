@@ -62,9 +62,13 @@ var thin = document.getElementById('thin');
 var thick = document.getElementById('thick');
 thin.onclick = function () {
     lineWidth = 5;
+    thin.parentElement.className = "thinActive";
+    thick.parentElement.className = "";
 }
 thick.onclick = function () {
     lineWidth = 10;
+    thin.parentElement.className = "";
+    thick.parentElement.className = "thickActive";
 }
 
 document.getElementById('clear').onclick = function () {
